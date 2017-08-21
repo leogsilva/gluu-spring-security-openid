@@ -35,8 +35,8 @@ The command to accomplish this is the next one:
 ```
 sudo keytool -import -v -trustcacerts -alias server-alias -file <PATH to GLUUS CRT certificate>/gluu.crt -keystore $JAVA_HOME/jre/lib/security/cacerts -keypass changeit -storepass changeit
 ```
-Remember to adjust <PATH to GLUUS CRT certificate> to the location where your Gluu service is located. In my case I just
-exported the certificate using my web brower export certificate functionality.
+Remember to adjust <PATH to GLUUS CRT certificate> to the location where your Gluu service is located (<PATH to GLUUS CRT certificate>). In my case I just
+exported the certificate using my web browser.
  
 ### Configure your application SSL Endpoint
 In Gluu, the redirect endpoint configured in the openid client must use SSL. To do this, 
